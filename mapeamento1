@@ -1,0 +1,49 @@
+Transportadore Aérea
+
+Avião(av_matrícula#, av_nome, av_marca, av_autonomia, av_qtdlugar)
+
+Fazem(faz_código#, av_matrícula*, vôo_numero*)
+
+Piloto(piloto_matrícula#, piloto_nome, piloto_CPF)
+
+Realiza(realiza_código#, piloto_matrícula*, vôo_numero*)
+
+Vôo(vôo_numero#, vôo_hora, vôo_data, vôo_partida, vôo_destino)
+
+Empresa
+
+Produto(prod_código#, prod_nome, prod_desc, prod_preço, prod_estoque)
+
+Gera(gera_código#, prod_código*, enc_número*)
+
+Encomenda(enc_número#, enc_data, enc_formaPagamento, enc_prazoPagamento)
+
+Satisfaz(satisfaz_código#, enc_número*, forne_CNPJ*)
+
+Fornecedor(forne_CNPJ#, forne_nome, forne_bairro, forne_CEP, forne_número
+            forne_cidade, forne_país, forne_reponsável)
+
+Forne_telefone(forne_CNPJ*, forne_telefone)
+
+
+Locadora de DVD
+
+DVD(dvd_título#, dvd_ator, dvd_gênero, dvd_ano)
+
+DVD_tipo(dvd_título*, dvd_tipo)
+
+Emprestimo(emp_código#, dvd_título*, amigo_CPF*)
+
+Amigo(amigo_CPF#, amigo_nome, amigo_bairro, amigo_rua, amigo_CEP, amigo_número)
+
+Livraria
+
+Cliente(cli_CPF#, cli_nome, cli_nasc, cli_bairro, cli_CEP, cli_rua)
+
+Cliente_telefone(cli_CPF*, cli_telefone)
+
+Compra(compra_código#, cli_CPF*, livro_ISBN*)
+
+Livro(livro_ISBN#, livro_nome, livro_ano, livro_editora, livro_quantidade
+        livro_descrição)
+        

@@ -1,0 +1,5 @@
+comandos sql
+
+create database "nome da base de dados" - cria a base de dados
+show databases - mostra todos as base de dados
+use "nome da base de dados" -  seleciona a base de dados
